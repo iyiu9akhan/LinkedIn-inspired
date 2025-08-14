@@ -13,7 +13,7 @@ function Login() {
       </div>
       <div className="flex-grow flex justify-center items-center flex-col">
         <div className="md:w-[352px] md:h-[536px] bg-white mb-[32px] p-[24px] rounded-[8px] shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
-            <h1 className="text-[32px] font-semibold">Sign in</h1>
+          <h1 className="text-[32px] font-semibold">Sign in</h1>
         </div>
         <p className="font-system_ui text-[16px] leading-[24px] text-black font-regular">
           New to LinkedIn?
