@@ -27,9 +27,7 @@ function FloatingInput({ placeholder, type = "text" }) {
       </label> */}
       <label
         htmlFor={id}
-        className="absolute left-[12px] top-1 text-sm text-black transition-all
-    peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-[18px]
-    peer-focus:top-1 peer-focus:text-sm peer-focus:text-black"
+        className="absolute left-[12px] top-1 text-sm text-black transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-[18px] peer-focus:top-1 peer-focus:text-sm peer-focus:text-black"
       >
         {placeholder}
       </label>
@@ -47,11 +45,11 @@ function Login() {
         <div className="md:w-[352px]  bg-white mb-[25px] p-[24px] rounded-[8px] shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
           <h1 className="text-[32px] font-semibold mb-[13px]">Sign in</h1>
           <div className="flex flex-col gap-3 text-gray-600 text-[16px] font-semibold mb-[24px]">
-            <div className="border-1 border-gray-600 w-full h-[42px] rounded-full flex justify-center items-center gap-2 cursor-pointer  hover:bg-red-500">
+            <div className="border-1 border-gray-600 w-full h-[42px] rounded-full flex justify-center items-center gap-1 cursor-pointer  hover:bg-linkedin_blue/10 transition-all duration-400">
               <FcGoogle size={23} />
               <p className="text-[15px]">Continue with Google</p>
             </div>
-            <div className="border-1 border-gray-600 w-full h-[42px] rounded-full flex items-center justify-center gap-2 cursor-pointer">
+            <div className="border-1 border-gray-600 w-full h-[42px] rounded-full flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-200 transition-all duration-400">
               <FaApple size={25} color="black" />
               <p>Sign in with Apple</p>
             </div>
@@ -83,9 +81,7 @@ function Login() {
               defaultChecked
               className="mr-2 accent-linkedin_blue w-[20px] h-[20px] rounded"
             />
-            <span className="text-[16px] text-black">
-              Keep me logged in
-            </span>
+            <span className="text-[16px] text-black">Keep me logged in</span>
           </div>
 
           <button className="w-full bg-linkedin_blue text-white h-[52px] rounded-full hover:bg-linkedi_blue cursor-pointer text-[16px] font-semibold">
@@ -104,36 +100,48 @@ function Login() {
           </span>
         </p>
       </div>
-      <div className="flex items-center justify-center mx-[396px] my-[20px] text-[12px] capitalize text-black/70">
+      <div className="flex items-center justify-center md:mx-[396px] my-[20px] text-[12px] capitalize text-black/70 gap-4">
         <div className="flex items-center justify-center text-black gap-0.5">
           {/* <img src={linkedin_footer_logo} alt="#linkedin_footer_logo" /> */}
           <p className="capitalize text-[15px] font-semibold">linked</p>
           <FaLinkedin size={15} />
         </div>
-        <div className="flex items-center gap-1.5 p-[8px]">
+        <div className="flex items-center gap-1.5 py-[8px]">
           <FaRegCopyright size={12} />
           <p>2025</p>
         </div>
         <div>
-          <p className="p-[8px]">user agreement</p>
+          <p className="py-[8px] cursor-pointer hover:underline hover:text-linkedin_blue">
+            user agreement
+          </p>
         </div>
         <div>
-          <p className="p-[8px]">privacy policy</p>
+          <p className="py-[8px] cursor-pointer hover:underline hover:text-linkedin_blue">
+            privacy policy
+          </p>
         </div>
         <div>
-          <p className="p-2">community guidelines</p>
+          <p className="py-2 cursor-pointer hover:underline hover:text-linkedin_blue">
+            community guidelines
+          </p>
         </div>
         <div>
-          <p className="p-2">cookie policy</p>
+          <p className="py-2 cursor-pointer hover:underline hover:text-linkedin_blue">
+            cookie policy
+          </p>
         </div>
         <div>
-          <p className="p-2">copyright policy</p>
+          <p className="py-2 cursor-pointer hover:underline hover:text-linkedin_blue">
+            copyright policy
+          </p>
         </div>
         <div>
-          <p className="p-2">send feedback</p>
+          <p className="py-2 cursor-pointer hover:underline hover:text-linkedin_blue">
+            send feedback
+          </p>
         </div>
-        <div className="flex items-center">
-          <p className="p-2"> language</p>
+        <div className="flex items-center hover:text-linkedin_blue">
+          <p className="py-2 cursor-pointer"> language</p>
           <RiArrowDownWideFill size={16} />
         </div>
       </div>
