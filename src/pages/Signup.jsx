@@ -15,7 +15,7 @@ function Signup() {
     <div>
       <div className="bg-signupBg h-screen flex flex-col">
         <div className="flex flex-col flex-grow max-w-[1128px] mx-auto  px-[16px] py-[24px]  w-full">
-          <div className="w-[135px] h-[33px]">
+          <div className="w-[135px] h-[33px] mx-auto md:ms-0">
             <img src={linkedin_logo} alt="#linkedin_logo" />
           </div>
           <div className="flex justify-center">
@@ -36,8 +36,14 @@ function Signup() {
                   Show
                 </button>
               </div> */}
-              <label className="">Email</label>
-              <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded" />
+              <div className="mb-3">
+                <label className="font-semibold text-[14px] text-gray-600">Email</label>
+                <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
+              </div>
+              <div>
+                <label className="font-semibold text-[14px] text-gray-600">Password</label>
+                <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
+              </div>
 
               <div className="flex items-center mt-3 mb-5">
                 <input
