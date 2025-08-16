@@ -6,6 +6,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 import { RiArrowDownWideFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import { Link } from "react-router";
 
 function FloatingInput({ placeholder, type = "text" }) {
   const id = placeholder.toLowerCase().replace(/\s+/g, "-");
@@ -95,9 +96,9 @@ function Login() {
         </div>
         <p className="font-system_ui text-[16px] leading-[24px] text-black font-regular">
           New to LinkedIn?
-          <span className="text-[16px] leading-[32px] text-linkedin_blue font-semibold ml-2 cursor-pointer hover:underline">
+          <Link to="/signup" className="text-[16px] leading-[32px] text-linkedin_blue font-semibold ml-2 cursor-pointer hover:underline">
             Join now
-          </span>
+          </Link>
         </p>
       </div>
       <div className="flex items-center justify-center md:mx-[396px] my-[20px] text-[12px] capitalize text-black/70 gap-4">

@@ -7,6 +7,7 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { IoLogoMicrosoft } from "react-icons/io5";
+import { Link } from "react-router";
 
 
 
@@ -37,12 +38,16 @@ function Signup() {
                 </button>
               </div> */}
               <div className="mb-3">
+                <label className="font-semibold text-[14px] text-gray-600">Full Name</label>
+                <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
+              </div>
+              <div className="mb-3">
                 <label className="font-semibold text-[14px] text-gray-600">Email</label>
                 <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
               </div>
               <div>
                 <label className="font-semibold text-[14px] text-gray-600">Password</label>
-                <input type="text" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
+                <input type="password" className="border-1 border-gray-600 w-full h-[32px] rounded px-[12px]" />
               </div>
 
               <div className="flex items-center mt-3 mb-5">
@@ -81,9 +86,9 @@ function Signup() {
               <div className="flex justify-center">
                 <p className="font-system_ui text-[16px] leading-[24px] text-gray-800 font-normal">
                   Already on Linkedin?
-                  <span className="text-[16px] leading-[32px] text-linkedin_blue font-semibold ml-2 cursor-pointer hover:underline">
+                  <Link to="/login" className="text-[16px] leading-[32px] text-linkedin_blue font-semibold ml-2 cursor-pointer hover:underline">
                     Sign in
-                  </span>
+                  </Link>
                 </p>
               </div>
               {/* <a
