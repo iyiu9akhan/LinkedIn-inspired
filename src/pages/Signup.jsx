@@ -8,12 +8,16 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { IoLogoMicrosoft } from "react-icons/io5";
 import { Link } from "react-router";
+import { Helmet } from "react-helmet";
 
 
 
 function Signup() {
   return (
     <div>
+       <Helmet>
+        <title>Sign Up | LinkedIn</title>
+      </Helmet>
       <div className="bg-signupBg h-screen flex flex-col">
         <div className="flex flex-col flex-grow max-w-[1128px] mx-auto  px-[16px] py-[24px]  w-full">
           <div className="w-[135px] h-[33px] mx-auto md:ms-0">

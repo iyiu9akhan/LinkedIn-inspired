@@ -7,6 +7,7 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { Link } from "react-router";
+import { Helmet } from "react-helmet";
 
 function FloatingInput({ placeholder, type = "text" }) {
   const id = placeholder.toLowerCase().replace(/\s+/g, "-");
@@ -38,6 +39,10 @@ function FloatingInput({ placeholder, type = "text" }) {
 
 function Login() {
   return (
+    <>
+     <Helmet>
+        <title>Login | LinkedIn</title>
+      </Helmet>
     <div className="h-screen flex flex-col">
       <div className="mt-8 ml-14 w-[110px] h-[28px]">
         <img src={linkedin_logo} alt="#linkedin_logo" />
@@ -147,6 +152,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
