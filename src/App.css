@@ -5,7 +5,7 @@
 @theme {
   --font-system_ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* --font-systemUi: "Roboto", sans-serif; */
+  /* --font-system_ui: "Roboto", sans-serif; */
   /* --font-primary: "Nunito", sans-serif;
   --font-secondary: "Open Sans", sans-serif;
   --font-regular: "Poppins", sans-serif; */
@@ -13,6 +13,6 @@
   --color-linkedin_blue: #0a66c2;
   --color-linkedin_hvrBtn_blue: #004182;
   --color-black: #000000;
-  --color-signupBg: #F3F2F0;
+  --color-signupBg: #f3f2f0;
   /* --color-black99: #00000099; */
 }
