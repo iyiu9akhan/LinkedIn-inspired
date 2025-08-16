@@ -212,7 +212,7 @@ function Home() {
                         className="flex items-center justify-between cursor-pointer hover:bg-gray-50 rounded-md p-1.5 transition"
                       >
                         {/* <img src={game.icon} alt="" className="w-9 h-9 rounded-md object-cover" /> */}
-                        <IoLogoGameControllerA size={35}/>
+                        <IoLogoGameControllerA size={35} />
                         <div className="flex-1 mx-3">
                           <div className="text-sm font-medium text-gray-900 leading-tight">
                             {game.title} <span className="text-gray-500 font-normal">{game.number}</span>
