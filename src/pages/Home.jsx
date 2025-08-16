@@ -22,6 +22,29 @@ import { BsFillPlayBtnFill } from "react-icons/bs";
 import { FaImage } from "react-icons/fa";
 import { MdArticle } from "react-icons/md";
 import { Helmet } from 'react-helmet';
+import { FaChevronRight, FaChevronDown } from 'react-icons/fa';
+import { IoLogoGameControllerA } from "react-icons/io";
+
+const games = [
+  {
+    icon: 'https://img.icons8.com/ios-filled/50/4CAF50/sudoku.png',
+    title: 'Mini Sudoku',
+    number: '#5',
+    description: 'The classic game, made mini'
+  },
+  {
+    icon: 'https://img.icons8.com/ios-filled/50/FF5722/flow.png',
+    title: 'Zip',
+    number: '#152',
+    description: 'Complete the path'
+  },
+  {
+    icon: 'https://img.icons8.com/ios-filled/50/3F51B5/squares.png',
+    title: 'Tango',
+    number: '#313',
+    description: 'Harmonize the grid'
+  },
+];
 
 function Home() {
   return (
@@ -117,7 +140,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className='mb-[8px] bg-white rounded-[13px] border border-gray-300 p-4 text-[12px] font-semibold cursor-not-allowed'>
+                <div className='mb-[8px] bg-white rounded-[13px] border border-gray-300 p-4 text-[12px] font-semibold cursor-not-allowed hover:underline'>
                   <div className='flex justify-between items-center'>
                     <p className='text-gray-800'>Connections</p>
                     <p className='text-linkedin_blue'>9</p>
@@ -159,9 +182,9 @@ function Home() {
                     <img
                       src={demo_profile}
                       alt="profile"
-                      className='h-[48px] w-[48px] rounded-full object-cover border-3 border-white  top-[25px]'
+                      className='h-[48px] w-[48px] rounded-full object-cover border-3 border-white  top-[25px] cursor-pointer'
                     />
-                    <input type="text" className='w-[467px] h-[48px] border-gray-400 border rounded-full px-[16px] py-[10px] placeholder:font-semibold placeholder:text-[14px] placeholder:text-black/70 outline-0' placeholder='Start a post' />
+                    <input type="text" className='w-[467px] h-[48px] border-gray-400 border rounded-full px-[16px] py-[10px] placeholder:font-semibold placeholder:text-[14px] placeholder:text-black/70 outline-0 cursor-pointer hover:bg-gray-100 duration-100' placeholder='Start a post' />
                   </div>
                   <div className='flex items-center justify-around '>
                     <div className='flex items-center gap-2  py-3 px-2 hover:bg-gray-100 duration-200  my-2 rounded-[5px] cursor-not-allowed'>
@@ -179,7 +202,33 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className='w-[300px] bg-white rounded-[13px] min-h-[300px]'>3</div>
+              <div>
+                <div className="w-[300px] bg-white border border-gray-300 rounded-[13px] p-[12px]">
+                  <h2 className="text-[15px] font-semibold mb-3 text-gray-900">Today’s puzzle games</h2>
+                  <div className="flex flex-col gap-3">
+                    {games.map((game, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center justify-between cursor-pointer hover:bg-gray-50 rounded-md p-1.5 transition"
+                      >
+                        {/* <img src={game.icon} alt="" className="w-9 h-9 rounded-md object-cover" /> */}
+                        <IoLogoGameControllerA size={35}/>
+                        <div className="flex-1 mx-3">
+                          <div className="text-sm font-medium text-gray-900 leading-tight">
+                            {game.title} <span className="text-gray-500 font-normal">{game.number}</span>
+                          </div>
+                          <div className="text-xs text-gray-500">{game.description}</div>
+                        </div>
+                        <FaChevronRight className="text-gray-400 text-xs" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-4 text-sm font-medium text-blue-600 hover:underline cursor-pointer flex items-center gap-1">
+                    Show more <FaChevronDown className="text-xs mt-[1px]" />
+                  </div>
+                </div>
+              </div>
             </div>
           </Container>
         </div>
